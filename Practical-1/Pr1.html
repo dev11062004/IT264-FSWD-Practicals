@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hdhub4u Movies</title>
+    <link rel="stylesheet" href="Pr1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IMBD Movies Collection Manager</h1>
+
+        <section id="add-movie">
+            <h2>Add a Film</h2>
+            <form id="movie-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="genre" placeholder="Genre" required>
+                <input type="number" step="0.1" id="rating" placeholder="Rating (e.g., 8.5)" required>
+                <input type="number" id="releaseYear" placeholder="Release Year" required>
+                <button type="submit">Add to Collection</button>
+            </form>
+        </section>
+
+        <section id="movie-list">
+            <h2>Movie Collection</h2>
+            <div id="movies-container"></div>
+        </section>
+
+        <section id="filters">
+            <h2>Filter</h2>
+            <input type="text" id="filter-genre" placeholder="Filter by Genre">
+            <button id="filter-genre-btn">Filter Genre</button>
+            <input type="number" id="filter-year" placeholder="Movies After Year">
+            <button id="filter-year-btn">Filter Year</button>
+            <button id="highest-rated">Find Highest Grossed</button>
+        </section>
+    </div>
+    <script src="Pr1.js"></script>
+</body>
+</html>
